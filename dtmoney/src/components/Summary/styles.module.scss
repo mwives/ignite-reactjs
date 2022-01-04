@@ -1,0 +1,48 @@
+.container {
+  max-width: 1120px;
+  margin: -10rem auto 0;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  div {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .incomeIcon {
+        font-size: 2rem;
+        color: var(--green);
+      }
+      
+      .outcomeIcon {
+        font-size: 2rem;
+        color: var(--red);
+      }
+
+      .totalIcon {
+        font-size: 2rem;
+        color: var(--white);
+      }
+    }
+
+    strong {
+      display: block;
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3rem;
+    }
+
+    &:not(:last-child) {
+      background: var(--shape);
+      color: var(--text-title);
+    }
+  }
+}
